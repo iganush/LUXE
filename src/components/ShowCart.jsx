@@ -36,7 +36,7 @@ const ShowCart = () => {
   ]
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-4">
+    <div className=" bg-[#f9fafb] flex flex-wrap justify-center gap-6 p-4">
       {data.map((item, i) => (
         <div
           key={i}
@@ -49,9 +49,9 @@ const ShowCart = () => {
           />
 
           <div className="absolute inset-0 z-10 p-4 text-white flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent">
-            <button className="bg-amber-50 text-black text-sm px-4 py-1 mb-4 hover:bg-[#e17100] hover:text-white transition duration-300 ease-in-out w-fit rounded-lg self-center">
-              Explore Collection →
-            </button>
+            <button className="opacity-0  ml-15 mb-15 group-hover:opacity-100 transition duration-300 ease-in-out bg-amber-50 text-black text-sm px-4 py-1 mt-4 hover:bg-[#e17100] hover:text-white w-fit rounded-lg">
+    Explore Collection →
+  </button>
             <p>{item.pieces}</p>
             <p className="hover:text-[#e17100] text-xl font-semibold">{item.title}</p>
             <p className="text-md text-gray-200">{item.desc}</p>
@@ -62,6 +62,9 @@ const ShowCart = () => {
           </div>
         </div>
       ))}
+
+        <button className='bg-[#ffffff]  text-[#e17100] hover:bg-[#e17100] hover:text-white border-2 w-3xs  h-10 border-[#e17100] rounded-sm transition duration-300 ease-in-out ' >View All Collections → </button>
+
     </div>
   )
 }

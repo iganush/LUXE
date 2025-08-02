@@ -16,8 +16,9 @@ function App() {
       <ShowCase />
       <ShowCart/>
       <DataCollection />
+       <ItemCart />
       <Footer/>
-      <ItemCart />
+     
     </>
   );
 }
